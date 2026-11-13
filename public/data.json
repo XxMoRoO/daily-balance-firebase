@@ -1,0 +1,996 @@
+{
+  "version": "0.2",
+  "disclaimerAr": "القيم الغذائية تقديرية للتخطيط، وليست قيمًا معتمدة للمنتجات المصرية. راجع ملصق كل منتج ووزنه وحالة طبخه، خاصة الألبان والخبز واللحوم.",
+  "exclusions": [
+    "fish",
+    "seafood",
+    "tomato",
+    "tomato paste",
+    "tomato sauce",
+    "صلصة طماطم",
+    "طماطم",
+    "سمك",
+    "مأكولات بحرية"
+  ],
+  "foods": {
+    "بيض": {
+      "kcal": 143,
+      "protein": 12.6,
+      "carbs": 0.7,
+      "fat": 9.5,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "جبنة قريش قليلة الدسم": {
+      "kcal": 98,
+      "protein": 17,
+      "carbs": 3,
+      "fat": 2,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "جبنة قريش": {
+      "kcal": 98,
+      "protein": 17,
+      "carbs": 3,
+      "fat": 2,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "عيش بلدي": {
+      "kcal": 275,
+      "protein": 9,
+      "carbs": 57,
+      "fat": 1.5,
+      "fiber": 3.5,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "خيار وخس": {
+      "kcal": 18,
+      "protein": 1.1,
+      "carbs": 3,
+      "fat": 0.2,
+      "fiber": 1,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "خس وخيار": {
+      "kcal": 18,
+      "protein": 1.1,
+      "carbs": 3,
+      "fat": 0.2,
+      "fiber": 1,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "فول مدمس": {
+      "kcal": 110,
+      "protein": 7.6,
+      "carbs": 19.7,
+      "fat": 0.4,
+      "fiber": 5.4,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "زيت زيتون": {
+      "kcal": 884,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "شوفان جاف": {
+      "kcal": 389,
+      "protein": 16.9,
+      "carbs": 66.3,
+      "fat": 6.9,
+      "fiber": 10.6,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "زبادي عالي البروتين قليل الدسم": {
+      "kcal": 65,
+      "protein": 10,
+      "carbs": 4,
+      "fat": 0.2,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "موز": {
+      "kcal": 89,
+      "protein": 1.1,
+      "carbs": 22.8,
+      "fat": 0.3,
+      "fiber": 2.6,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "لوز": {
+      "kcal": 579,
+      "protein": 21.2,
+      "carbs": 21.6,
+      "fat": 49.9,
+      "fiber": 12.5,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "فراخ مطهية": {
+      "kcal": 165,
+      "protein": 31,
+      "carbs": 0,
+      "fat": 3.6,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "فراخ مشوية": {
+      "kcal": 165,
+      "protein": 31,
+      "carbs": 0,
+      "fat": 3.6,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "صدور فراخ مشوية": {
+      "kcal": 165,
+      "protein": 31,
+      "carbs": 0,
+      "fat": 3.6,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "رز مطبوخ": {
+      "kcal": 130,
+      "protein": 2.7,
+      "carbs": 28.2,
+      "fat": 0.3,
+      "fiber": 0.4,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "خضار مطهو": {
+      "kcal": 45,
+      "protein": 2,
+      "carbs": 8,
+      "fat": 0.5,
+      "fiber": 2.8,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "لحمة قليلة الدهن مطهية": {
+      "kcal": 210,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 11,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "لحمة مشوية قليلة الدهون": {
+      "kcal": 210,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 11,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "بطاطس بالفرن": {
+      "kcal": 92,
+      "protein": 2.5,
+      "carbs": 21,
+      "fat": 0.1,
+      "fiber": 2.2,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "بطاطس فرن": {
+      "kcal": 92,
+      "protein": 2.5,
+      "carbs": 21,
+      "fat": 0.1,
+      "fiber": 2.2,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "بطاطس مسلوقة": {
+      "kcal": 87,
+      "protein": 1.9,
+      "carbs": 20.1,
+      "fat": 0.1,
+      "fiber": 1.8,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "سلطة بدون طماطم": {
+      "kcal": 25,
+      "protein": 1.3,
+      "carbs": 4.6,
+      "fat": 0.3,
+      "fiber": 1.6,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "زبادي قليل الدسم": {
+      "kcal": 60,
+      "protein": 4.3,
+      "carbs": 5.5,
+      "fat": 2.0,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "زيت للطهي": {
+      "kcal": 884,
+      "protein": 0,
+      "carbs": 0,
+      "fat": 100,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "مكرونة مسلوقة": {
+      "kcal": 158,
+      "protein": 5.8,
+      "carbs": 30.9,
+      "fat": 0.9,
+      "fiber": 1.8,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "مشروم": {
+      "kcal": 22,
+      "protein": 3.1,
+      "carbs": 3.3,
+      "fat": 0.3,
+      "fiber": 1,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "لبن قليل الدسم": {
+      "kcal": 46,
+      "protein": 3.5,
+      "carbs": 5,
+      "fat": 1.5,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "برجر لحمة قليلة الدهون": {
+      "kcal": 218,
+      "protein": 26,
+      "carbs": 0,
+      "fat": 12,
+      "fiber": 0,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "خبز برجر": {
+      "kcal": 270,
+      "protein": 9,
+      "carbs": 50,
+      "fat": 3.7,
+      "fiber": 2.5,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "تفاح": {
+      "kcal": 52,
+      "protein": 0.3,
+      "carbs": 14,
+      "fat": 0.2,
+      "fiber": 2.4,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "فول سوداني": {
+      "kcal": 585,
+      "protein": 25,
+      "carbs": 21,
+      "fat": 50,
+      "fiber": 8.5,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "برتقال": {
+      "kcal": 47,
+      "protein": 0.9,
+      "carbs": 11.8,
+      "fat": 0.1,
+      "fiber": 2.4,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "عين جمل": {
+      "kcal": 654,
+      "protein": 15.2,
+      "carbs": 13.7,
+      "fat": 65.2,
+      "fiber": 6.7,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    },
+    "شوربة عدس كثيفة": {
+      "kcal": 100,
+      "protein": 5.8,
+      "carbs": 14,
+      "fat": 2.6,
+      "fiber": 3.5,
+      "source": "provisional_reference_estimate",
+      "reviewed": false,
+      "cookingState": "as named",
+      "unit": "per_100g"
+    }
+  },
+  "meals": [
+    {
+      "id": "B01",
+      "category": "breakfast",
+      "nameAr": "بيض وجبنة قريش",
+      "legacyApproxKcal": 470,
+      "ingredients": [
+        {
+          "food": "بيض",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "بيضتان",
+          "preparationState": "ready"
+        },
+        {
+          "food": "جبنة قريش قليلة الدسم",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "نحو 10 ملاعق كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عيش بلدي",
+          "quantity": 55,
+          "unit": "g",
+          "householdEquivalent": "نصف رغيف متوسط",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خيار وخس",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "طبق صغير",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "B02",
+      "category": "breakfast",
+      "nameAr": "فول وبيض",
+      "legacyApproxKcal": 490,
+      "ingredients": [
+        {
+          "food": "فول مدمس",
+          "quantity": 180,
+          "unit": "g",
+          "householdEquivalent": "نحو 12 ملعقة كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "بيض",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "بيضتان",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عيش بلدي",
+          "quantity": 55,
+          "unit": "g",
+          "householdEquivalent": "نصف رغيف",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زيت زيتون",
+          "quantity": 5,
+          "unit": "g",
+          "householdEquivalent": "ملعقة شاي",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "B03",
+      "category": "breakfast",
+      "nameAr": "شوفان بالزبادي",
+      "legacyApproxKcal": 490,
+      "ingredients": [
+        {
+          "food": "شوفان جاف",
+          "quantity": 50,
+          "unit": "g",
+          "householdEquivalent": "نحو 6 ملاعق كبيرة",
+          "preparationState": "dry"
+        },
+        {
+          "food": "زبادي عالي البروتين قليل الدسم",
+          "quantity": 200,
+          "unit": "g",
+          "householdEquivalent": "علبة كبيرة تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "موز",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "ثمرة صغيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "لوز",
+          "quantity": 15,
+          "unit": "g",
+          "householdEquivalent": "نحو 12 حبة",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "B04",
+      "category": "breakfast",
+      "nameAr": "ساندوتش فراخ وجبنة",
+      "legacyApproxKcal": 480,
+      "ingredients": [
+        {
+          "food": "فراخ مطهية",
+          "quantity": 110,
+          "unit": "g",
+          "householdEquivalent": "قطعة متوسطة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عيش بلدي",
+          "quantity": 55,
+          "unit": "g",
+          "householdEquivalent": "نصف رغيف",
+          "preparationState": "ready"
+        },
+        {
+          "food": "جبنة قريش",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "نحو 7 ملاعق كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خيار وخس",
+          "quantity": 120,
+          "unit": "g",
+          "householdEquivalent": "كوب ونصف تقريبًا",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "L01",
+      "category": "lunch",
+      "nameAr": "فراخ ورز وخضار",
+      "legacyApproxKcal": 680,
+      "ingredients": [
+        {
+          "food": "صدور فراخ مشوية",
+          "quantity": 170,
+          "unit": "g",
+          "householdEquivalent": "قطعة كبيرة تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "رز مطبوخ",
+          "quantity": 180,
+          "unit": "g",
+          "householdEquivalent": "نحو 12 ملعقة كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خضار مطهو",
+          "quantity": 200,
+          "unit": "g",
+          "householdEquivalent": "كوب ونصف تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زيت زيتون",
+          "quantity": 10,
+          "unit": "g",
+          "householdEquivalent": "ملعقتا شاي",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "L02",
+      "category": "lunch",
+      "nameAr": "لحمة وبطاطس فرن",
+      "legacyApproxKcal": 670,
+      "ingredients": [
+        {
+          "food": "لحمة قليلة الدهن مطهية",
+          "quantity": 160,
+          "unit": "g",
+          "householdEquivalent": "قطعة كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "بطاطس بالفرن",
+          "quantity": 250,
+          "unit": "g",
+          "householdEquivalent": "حبتان صغيرتان",
+          "preparationState": "ready"
+        },
+        {
+          "food": "سلطة بدون طماطم",
+          "quantity": 200,
+          "unit": "g",
+          "householdEquivalent": "طبق متوسط",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زيت زيتون",
+          "quantity": 10,
+          "unit": "g",
+          "householdEquivalent": "ملعقتا شاي",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "L03",
+      "category": "lunch",
+      "nameAr": "شاورما فراخ منزلية",
+      "legacyApproxKcal": 650,
+      "ingredients": [
+        {
+          "food": "فراخ مشوية",
+          "quantity": 180,
+          "unit": "g",
+          "householdEquivalent": "كوب وربع شرائح تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عيش بلدي",
+          "quantity": 80,
+          "unit": "g",
+          "householdEquivalent": "ثلاثة أرباع رغيف تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زبادي قليل الدسم",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "6–7 ملاعق كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خيار وخس",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "طبق صغير",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زيت للطهي",
+          "quantity": 5,
+          "unit": "g",
+          "householdEquivalent": "ملعقة شاي",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "L04",
+      "category": "lunch",
+      "nameAr": "مكرونة بفراخ ومشروم",
+      "legacyApproxKcal": 670,
+      "ingredients": [
+        {
+          "food": "مكرونة مسلوقة",
+          "quantity": 180,
+          "unit": "g",
+          "householdEquivalent": "كوب وربع تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "فراخ مطهية",
+          "quantity": 160,
+          "unit": "g",
+          "householdEquivalent": "قطعة كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "مشروم",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "كوب ونصف شرائح",
+          "preparationState": "ready"
+        },
+        {
+          "food": "لبن قليل الدسم",
+          "quantity": 100,
+          "unit": "ml",
+          "householdEquivalent": "نصف كوب",
+          "preparationState": "liquid"
+        },
+        {
+          "food": "زيت زيتون",
+          "quantity": 5,
+          "unit": "g",
+          "householdEquivalent": "ملعقة شاي",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "L05",
+      "category": "lunch",
+      "nameAr": "برجر منزلي وبطاطس",
+      "legacyApproxKcal": 720,
+      "ingredients": [
+        {
+          "food": "برجر لحمة قليلة الدهون",
+          "quantity": 140,
+          "unit": "g",
+          "householdEquivalent": "قطعة برجر متوسطة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خبز برجر",
+          "quantity": 75,
+          "unit": "g",
+          "householdEquivalent": "قطعة متوسطة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "بطاطس فرن",
+          "quantity": 180,
+          "unit": "g",
+          "householdEquivalent": "حبة متوسطة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خس وخيار",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "طبق صغير",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زيت للطهي",
+          "quantity": 5,
+          "unit": "g",
+          "householdEquivalent": "ملعقة شاي",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "S01",
+      "category": "snack",
+      "nameAr": "زبادي وفاكهة",
+      "legacyApproxKcal": 230,
+      "ingredients": [
+        {
+          "food": "زبادي عالي البروتين قليل الدسم",
+          "quantity": 170,
+          "unit": "g",
+          "householdEquivalent": "علبة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "تفاح",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "ثمرة متوسطة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "لوز",
+          "quantity": 10,
+          "unit": "g",
+          "householdEquivalent": "نحو 8 حبات",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "S02",
+      "category": "snack",
+      "nameAr": "لبن وموز وفول سوداني",
+      "legacyApproxKcal": 250,
+      "ingredients": [
+        {
+          "food": "لبن قليل الدسم",
+          "quantity": 200,
+          "unit": "ml",
+          "householdEquivalent": "كوب صغير",
+          "preparationState": "liquid"
+        },
+        {
+          "food": "موز",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "ثمرة صغيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "فول سوداني",
+          "quantity": 10,
+          "unit": "g",
+          "householdEquivalent": "ملعقة كبيرة تقريبًا",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "S03",
+      "category": "snack",
+      "nameAr": "جبنة قريش وفاكهة",
+      "legacyApproxKcal": 230,
+      "ingredients": [
+        {
+          "food": "جبنة قريش",
+          "quantity": 120,
+          "unit": "g",
+          "householdEquivalent": "نحو 8 ملاعق كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "برتقال",
+          "quantity": 180,
+          "unit": "g",
+          "householdEquivalent": "ثمرة كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عين جمل",
+          "quantity": 8,
+          "unit": "ml",
+          "householdEquivalent": "نصف ملعقة كبيرة مجروش تقريبًا",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "D01",
+      "category": "dinner",
+      "nameAr": "جبنة قريش وبيض وعيش",
+      "legacyApproxKcal": 590,
+      "ingredients": [
+        {
+          "food": "جبنة قريش قليلة الدسم",
+          "quantity": 200,
+          "unit": "g",
+          "householdEquivalent": "13–14 ملعقة كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "بيض",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "بيضتان",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عيش بلدي",
+          "quantity": 80,
+          "unit": "g",
+          "householdEquivalent": "ثلاثة أرباع رغيف تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خيار وخس",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "طبق صغير",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "D02",
+      "category": "dinner",
+      "nameAr": "فراخ وبطاطس وسلطة",
+      "legacyApproxKcal": 580,
+      "ingredients": [
+        {
+          "food": "فراخ مشوية",
+          "quantity": 160,
+          "unit": "g",
+          "householdEquivalent": "قطعة كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "بطاطس مسلوقة",
+          "quantity": 250,
+          "unit": "g",
+          "householdEquivalent": "حبتان صغيرتان",
+          "preparationState": "ready"
+        },
+        {
+          "food": "سلطة بدون طماطم",
+          "quantity": 200,
+          "unit": "g",
+          "householdEquivalent": "طبق متوسط",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زيت زيتون",
+          "quantity": 5,
+          "unit": "g",
+          "householdEquivalent": "ملعقة شاي",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "D03",
+      "category": "dinner",
+      "nameAr": "شوربة عدس وبيض وجبنة",
+      "legacyApproxKcal": 650,
+      "ingredients": [
+        {
+          "food": "شوربة عدس كثيفة",
+          "quantity": 300,
+          "unit": "g",
+          "householdEquivalent": "كوب ونصف تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "بيض",
+          "quantity": 100,
+          "unit": "g",
+          "householdEquivalent": "بيضتان",
+          "preparationState": "ready"
+        },
+        {
+          "food": "جبنة قريش",
+          "quantity": 120,
+          "unit": "g",
+          "householdEquivalent": "نحو 8 ملاعق كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عيش بلدي",
+          "quantity": 55,
+          "unit": "g",
+          "householdEquivalent": "نصف رغيف",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    },
+    {
+      "id": "D04",
+      "category": "dinner",
+      "nameAr": "ساندوتش لحمة مشوية",
+      "legacyApproxKcal": 590,
+      "ingredients": [
+        {
+          "food": "لحمة مشوية قليلة الدهون",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "كوب شرائح تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "عيش بلدي",
+          "quantity": 80,
+          "unit": "g",
+          "householdEquivalent": "ثلاثة أرباع رغيف تقريبًا",
+          "preparationState": "ready"
+        },
+        {
+          "food": "زبادي قليل الدسم",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "نحو 10 ملاعق كبيرة",
+          "preparationState": "ready"
+        },
+        {
+          "food": "خيار وخس",
+          "quantity": 150,
+          "unit": "g",
+          "householdEquivalent": "طبق صغير",
+          "preparationState": "ready"
+        }
+      ],
+      "nutritionVerified": false
+    }
+  ]
+}
