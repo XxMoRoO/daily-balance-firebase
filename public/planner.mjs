@@ -3,8 +3,39 @@ export const slotAr = {breakfast:'الفطار',lunch:'الغداء',snack:'ال
 export const defaultGoals = {kcal:2000, protein:140, carbs:200, fat:71};
 const excluded = /طماطم|صلصة\s*طماطم|معجون\s*طماطم|سمك|تونة|سلمون|سردين|جمبري|روبيان|fish|seafood|tomato/i;
 export function isMealAllowed(meal, exclusions = []) {
-  const extra=exclusions.map(x=>String(x||'').trim()).filter(Boolean);
-  return meal.ingredients.every(i=> !excluded.test(i.food) && !extra.some(e=>i.food.includes(e)));
+  // "سلطة بدون طماطم" is explicitly safe; do not reject it because of the word طماطم.
+  const extra=exclusions.map(x=>String(x||'').trim().toLowerCase()).filter(Boolean);
+  return Array.isArray(meal?.ingredients) && meal.ingredients.length > 0 && meal.ingredients.every(i=>{
+    const label=String(i.food||'').toLowerCase();
+    const cleaned=label.replace(/(?:بدون|من غير|خالية من)\s*(?:ال)?طماطم/g,'');
+    return !excluded.test(cleaned) && !extra.some(e=>cleaned.includes(e));
+  });
+}
+export function suggestedMealBudget(goals,category){
+  const shares={breakfast:.25,lunch:.35,snack:.15,dinner:.25};
+  const share=shares[category]??.25;
+  return {kcal:Math.round((Number(goals.kcal)||2000)*share),protein:Math.round((Number(goals.protein)||140)*share),carbs:Math.round((Number(goals.carbs)||200)*share),fat:Math.round((Number(goals.fat)||71)*share)};
+}
+export function evaluateNutrition(n,limit){
+  const keys=['kcal','protein','carbs','fat'];
+  const ratio=Object.fromEntries(keys.map(k=>[k, Number(limit[k])>0 ? Math.round(100*(Number(n[k])||0)/Number(limit[k])) : 0]));
+  return {ratio, over:keys.filter(k=>ratio[k]>100), significantlyOver:keys.filter(k=>ratio[k]>130)};
+}
+export function makeCustomMeal({id,category,nameAr,ingredients},foodDb,exclusions=[]){
+  if(!slots.includes(category))throw Error('تصنيف الوجبة غير صحيح');
+  const name=String(nameAr||'').trim();
+  if(name.length<3||name.length>80)throw Error('اسم الوجبة لازم يكون بين ٣ و٨٠ حرف');
+  if(!Array.isArray(ingredients)||ingredients.length<1||ingredients.length>18)throw Error('اختار من ١ إلى ١٨ مكوّن');
+  const items=ingredients.map(i=>{
+    const food=String(i.food||'');const quantity=Number(i.quantity);
+    if(!Object.hasOwn(foodDb,food)||!Number.isFinite(quantity)||quantity<=0||quantity>2000)throw Error('راجع المكون والجرامات');
+    return {food,quantity,unit:'g',householdEquivalent:'كمية مخصصة بالجرام',preparationState:'ready'};
+  });
+  const meal={id:String(id||''),category,nameAr:name,ingredients:items,isCustom:true,nutritionVerified:false};
+  if(!isMealAllowed(meal,exclusions))throw Error('الوجبة فيها مكوّن مستبعد من نظامك');
+  const nutrition=nutritionForMeal(meal,foodDb);
+  if(!Number.isFinite(nutrition.kcal)||nutrition.kcal<=0)throw Error('القيم الغذائية غير صالحة');
+  return meal;
 }
 export function nutrientsForItems(items,foodDb) {
   const total={kcal:0,protein:0,carbs:0,fat:0,fiber:0};
